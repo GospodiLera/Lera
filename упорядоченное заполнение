@@ -87,3 +87,9 @@ public class Main {
         System.out.println(time_add_ll + " " + time_get_ll + " " + time_delete_ll);
       }
 }
+/*Имеем:
+1391 19942 8812
+197566 21797 24116
+927 43594 13449
+1391 39884 15768
+*/
