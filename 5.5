@@ -10,6 +10,16 @@ public class Main{
         sortFile("notes3.txt");
         //sortFile("3 Українська");
     }
+    
+    class Word implements Comparable<Word>{
+    private String text;
+    Word(String text) {
+        this.text = text;
+    }
+    String get(){return text;}
+    public int compareTo(Word word){
+        return text.toLowerCase().compareTo(word.get().toLowerCase());
+    }
 
     public static void sortFile(String file){
         System.out.println(String.format("\nSorting %s", file));
@@ -28,14 +38,4 @@ public class Main{
         }
     }
 }
-
-class Word implements Comparable<Word>{
-    private String text;
-    Word(String text) {
-        this.text = text;
-    }
-    String get(){return text;}
-    public int compareTo(Word word){
-        return text.toLowerCase().compareTo(word.get().toLowerCase());
-    }
 }
