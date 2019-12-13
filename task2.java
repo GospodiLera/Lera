@@ -1,6 +1,6 @@
 import java.util.*;
 import java.io.*;
-public class Main {
+public class task2 {
     public static void main(String[] args) {
         ArrayList<Double> alfa = new ArrayList<Double>();
         for (int i = 0; i < 150; i++)
